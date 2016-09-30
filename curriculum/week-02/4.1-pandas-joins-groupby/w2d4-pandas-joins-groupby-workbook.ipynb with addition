@@ -53,7 +53,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 8,
    "metadata": {
     "collapsed": true,
     "slideshow": {
@@ -92,29 +92,6 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 2,
-   "metadata": {
-    "collapsed": false
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "'This is a string!This is also a string!'"
-      ]
-     },
-     "execution_count": 2,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "\n",
-    "s1 +s2"
-   ]
-  },
-  {
    "cell_type": "markdown",
    "metadata": {
     "slideshow": {
@@ -127,7 +104,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 13,
    "metadata": {
     "collapsed": true,
     "slideshow": {
@@ -142,7 +119,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 14,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -156,7 +133,7 @@
        "['list_item_a1', 'list_item_a2', 'list_item_b1', 'list_item_b2']"
       ]
      },
-     "execution_count": 4,
+     "execution_count": 14,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -201,7 +178,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 16,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -218,7 +195,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 17,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -237,7 +214,7 @@
        "dtype: int64"
       ]
      },
-     "execution_count": 6,
+     "execution_count": 17,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -296,7 +273,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 18,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -320,7 +297,7 @@
        "dtype: int64"
       ]
      },
-     "execution_count": 7,
+     "execution_count": 18,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -353,7 +330,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 20,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -377,7 +354,7 @@
        "dtype: int64"
       ]
      },
-     "execution_count": 8,
+     "execution_count": 20,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -386,40 +363,6 @@
     "# solution\n",
     "\n",
     "pd.concat([ps1, ps2]).reset_index(drop=True)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 9,
-   "metadata": {
-    "collapsed": false
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "0     1\n",
-       "1     2\n",
-       "2     3\n",
-       "3     4\n",
-       "4     5\n",
-       "5    10\n",
-       "6    20\n",
-       "7    30\n",
-       "8    40\n",
-       "9    50\n",
-       "dtype: int64"
-      ]
-     },
-     "execution_count": 9,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.concat([ps1, ps2]).reset_index(drop=True)\n",
-    "\n",
-    "# drop = true means "
    ]
   },
   {
@@ -432,15 +375,6 @@
    "source": [
     "## What about a DataFrame?"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
   },
   {
    "cell_type": "markdown",
@@ -456,7 +390,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 29,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -528,7 +462,7 @@
        "5             B    Betty             89"
       ]
      },
-     "execution_count": 10,
+     "execution_count": 29,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -545,7 +479,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 28,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -617,7 +551,7 @@
        "5             D   Dipsy             68"
       ]
      },
-     "execution_count": 12,
+     "execution_count": 28,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -645,7 +579,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 31,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -759,14 +693,13 @@
        "5             D    Dipsy             68"
       ]
      },
-     "execution_count": 13,
+     "execution_count": 31,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "pd.concat([ab_students, cd_students])\n",
-    "#union in sql. vertically stacks it. "
+    "pd.concat([ab_students, cd_students])"
    ]
   },
   {
@@ -804,7 +737,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": 35,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -897,15 +830,13 @@
        "5             B    Betty             89             D   Dipsy             68"
       ]
      },
-     "execution_count": 15,
+     "execution_count": 35,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "pd.concat([ab_students, cd_students], axis=1)\n",
-    "\n",
-    "#0 is column 1 is rows"
+    "pd.concat([ab_students, cd_students], axis=1)"
    ]
   },
   {
@@ -933,7 +864,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 61,
    "metadata": {
     "collapsed": true,
     "slideshow": {
@@ -947,7 +878,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 17,
+   "execution_count": 62,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -961,7 +892,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 18,
+   "execution_count": 118,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -975,7 +906,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 19,
+   "execution_count": 119,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -1022,7 +953,7 @@
        "2           AZ  Arizona"
       ]
      },
-     "execution_count": 19,
+     "execution_count": 119,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1033,7 +964,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
+   "execution_count": 120,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -1080,7 +1011,7 @@
        "2           NH  New Hampshire"
       ]
      },
-     "execution_count": 20,
+     "execution_count": 120,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1091,7 +1022,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
+   "execution_count": 121,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -1146,7 +1077,7 @@
        "2     Phoenix  33.448143 -112.096962  Arizona"
       ]
      },
-     "execution_count": 21,
+     "execution_count": 121,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1164,7 +1095,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
+   "execution_count": 122,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -1211,93 +1142,296 @@
        "      <td>CA</td>\n",
        "      <td>California</td>\n",
        "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>CO</td>\n",
+       "      <td>Colorado</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>CT</td>\n",
+       "      <td>Connecticut</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>DE</td>\n",
+       "      <td>Delaware</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>FL</td>\n",
+       "      <td>Florida</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>GA</td>\n",
+       "      <td>Georgia</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>10</th>\n",
+       "      <td>HI</td>\n",
+       "      <td>Hawaii</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>ID</td>\n",
+       "      <td>Idaho</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>IL</td>\n",
+       "      <td>Illinois</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>13</th>\n",
+       "      <td>IN</td>\n",
+       "      <td>Indiana</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>14</th>\n",
+       "      <td>IA</td>\n",
+       "      <td>Iowa</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>15</th>\n",
+       "      <td>KS</td>\n",
+       "      <td>Kansas</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>16</th>\n",
+       "      <td>KY</td>\n",
+       "      <td>Kentucky</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>17</th>\n",
+       "      <td>LA</td>\n",
+       "      <td>Louisiana</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>18</th>\n",
+       "      <td>ME</td>\n",
+       "      <td>Maine</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>19</th>\n",
+       "      <td>MD</td>\n",
+       "      <td>Maryland</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>20</th>\n",
+       "      <td>MA</td>\n",
+       "      <td>Massachusetts</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>21</th>\n",
+       "      <td>MI</td>\n",
+       "      <td>Michigan</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>22</th>\n",
+       "      <td>MN</td>\n",
+       "      <td>Minnesota</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>23</th>\n",
+       "      <td>MS</td>\n",
+       "      <td>Mississippi</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>24</th>\n",
+       "      <td>MO</td>\n",
+       "      <td>Missouri</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>25</th>\n",
+       "      <td>MT</td>\n",
+       "      <td>Montana</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>26</th>\n",
+       "      <td>NE</td>\n",
+       "      <td>Nebraska</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>27</th>\n",
+       "      <td>NV</td>\n",
+       "      <td>Nevada</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>28</th>\n",
+       "      <td>NH</td>\n",
+       "      <td>New Hampshire</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>29</th>\n",
+       "      <td>NJ</td>\n",
+       "      <td>New Jersey</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>30</th>\n",
+       "      <td>NM</td>\n",
+       "      <td>New Mexico</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>31</th>\n",
+       "      <td>NY</td>\n",
+       "      <td>New York</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>32</th>\n",
+       "      <td>NC</td>\n",
+       "      <td>North Carolina</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>33</th>\n",
+       "      <td>ND</td>\n",
+       "      <td>North Dakota</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>34</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>Ohio</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35</th>\n",
+       "      <td>OK</td>\n",
+       "      <td>Oklahoma</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>36</th>\n",
+       "      <td>OR</td>\n",
+       "      <td>Oregon</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>37</th>\n",
+       "      <td>PA</td>\n",
+       "      <td>Pennsylvania</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>38</th>\n",
+       "      <td>RI</td>\n",
+       "      <td>Rhode Island</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>39</th>\n",
+       "      <td>SC</td>\n",
+       "      <td>South Carolina</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>40</th>\n",
+       "      <td>SD</td>\n",
+       "      <td>South Dakota</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>41</th>\n",
+       "      <td>TN</td>\n",
+       "      <td>Tennessee</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>42</th>\n",
+       "      <td>TX</td>\n",
+       "      <td>Texas</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>43</th>\n",
+       "      <td>UT</td>\n",
+       "      <td>Utah</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>44</th>\n",
+       "      <td>VT</td>\n",
+       "      <td>Vermont</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>45</th>\n",
+       "      <td>VA</td>\n",
+       "      <td>Virginia</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>46</th>\n",
+       "      <td>WA</td>\n",
+       "      <td>Washington</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>47</th>\n",
+       "      <td>WV</td>\n",
+       "      <td>West Virginia</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>48</th>\n",
+       "      <td>WI</td>\n",
+       "      <td>Wisconsin</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>49</th>\n",
+       "      <td>WY</td>\n",
+       "      <td>Wyoming</td>\n",
+       "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
        "</div>"
       ],
       "text/plain": [
-       "  abbreviation        name\n",
-       "0           AL     Alabama\n",
-       "1           AK      Alaska\n",
-       "2           AZ     Arizona\n",
-       "3           AR    Arkansas\n",
-       "4           CA  California"
+       "   abbreviation            name\n",
+       "0            AL         Alabama\n",
+       "1            AK          Alaska\n",
+       "2            AZ         Arizona\n",
+       "3            AR        Arkansas\n",
+       "4            CA      California\n",
+       "5            CO        Colorado\n",
+       "6            CT     Connecticut\n",
+       "7            DE        Delaware\n",
+       "8            FL         Florida\n",
+       "9            GA         Georgia\n",
+       "10           HI          Hawaii\n",
+       "11           ID           Idaho\n",
+       "12           IL        Illinois\n",
+       "13           IN         Indiana\n",
+       "14           IA            Iowa\n",
+       "15           KS          Kansas\n",
+       "16           KY        Kentucky\n",
+       "17           LA       Louisiana\n",
+       "18           ME           Maine\n",
+       "19           MD        Maryland\n",
+       "20           MA   Massachusetts\n",
+       "21           MI        Michigan\n",
+       "22           MN       Minnesota\n",
+       "23           MS     Mississippi\n",
+       "24           MO        Missouri\n",
+       "25           MT         Montana\n",
+       "26           NE        Nebraska\n",
+       "27           NV          Nevada\n",
+       "28           NH   New Hampshire\n",
+       "29           NJ      New Jersey\n",
+       "30           NM      New Mexico\n",
+       "31           NY        New York\n",
+       "32           NC  North Carolina\n",
+       "33           ND    North Dakota\n",
+       "34           OH            Ohio\n",
+       "35           OK        Oklahoma\n",
+       "36           OR          Oregon\n",
+       "37           PA    Pennsylvania\n",
+       "38           RI    Rhode Island\n",
+       "39           SC  South Carolina\n",
+       "40           SD    South Dakota\n",
+       "41           TN       Tennessee\n",
+       "42           TX           Texas\n",
+       "43           UT            Utah\n",
+       "44           VT         Vermont\n",
+       "45           VA        Virginia\n",
+       "46           WA      Washington\n",
+       "47           WV   West Virginia\n",
+       "48           WI       Wisconsin\n",
+       "49           WY         Wyoming"
       ]
      },
-     "execution_count": 24,
+     "execution_count": 122,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "pd.concat([states_atom, states_ntoz], ignore_index=True).head(5)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 23,
-   "metadata": {
-    "collapsed": false
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>abbreviation</th>\n",
-       "      <th>name</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>AL</td>\n",
-       "      <td>Alabama</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>AK</td>\n",
-       "      <td>Alaska</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>AZ</td>\n",
-       "      <td>Arizona</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>AR</td>\n",
-       "      <td>Arkansas</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>CA</td>\n",
-       "      <td>California</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "  abbreviation        name\n",
-       "0           AL     Alabama\n",
-       "1           AK      Alaska\n",
-       "2           AZ     Arizona\n",
-       "3           AR    Arkansas\n",
-       "4           CA  California"
-      ]
-     },
-     "execution_count": 23,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.concat([states_atom, states_ntoz], ignore_index=True).head(5)\n"
+    "pd.concat([states_atom, states_ntoz], ignore_index=True)"
    ]
   },
   {
@@ -1335,7 +1469,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": 123,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -1434,32 +1568,160 @@
        "      <td>OK</td>\n",
        "      <td>Oklahoma</td>\n",
        "    </tr>\n",
+       "    <tr>\n",
+       "      <th>10</th>\n",
+       "      <td>HI</td>\n",
+       "      <td>Hawaii</td>\n",
+       "      <td>OR</td>\n",
+       "      <td>Oregon</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>ID</td>\n",
+       "      <td>Idaho</td>\n",
+       "      <td>PA</td>\n",
+       "      <td>Pennsylvania</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>IL</td>\n",
+       "      <td>Illinois</td>\n",
+       "      <td>RI</td>\n",
+       "      <td>Rhode Island</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>13</th>\n",
+       "      <td>IN</td>\n",
+       "      <td>Indiana</td>\n",
+       "      <td>SC</td>\n",
+       "      <td>South Carolina</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>14</th>\n",
+       "      <td>IA</td>\n",
+       "      <td>Iowa</td>\n",
+       "      <td>SD</td>\n",
+       "      <td>South Dakota</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>15</th>\n",
+       "      <td>KS</td>\n",
+       "      <td>Kansas</td>\n",
+       "      <td>TN</td>\n",
+       "      <td>Tennessee</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>16</th>\n",
+       "      <td>KY</td>\n",
+       "      <td>Kentucky</td>\n",
+       "      <td>TX</td>\n",
+       "      <td>Texas</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>17</th>\n",
+       "      <td>LA</td>\n",
+       "      <td>Louisiana</td>\n",
+       "      <td>UT</td>\n",
+       "      <td>Utah</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>18</th>\n",
+       "      <td>ME</td>\n",
+       "      <td>Maine</td>\n",
+       "      <td>VT</td>\n",
+       "      <td>Vermont</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>19</th>\n",
+       "      <td>MD</td>\n",
+       "      <td>Maryland</td>\n",
+       "      <td>VA</td>\n",
+       "      <td>Virginia</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>20</th>\n",
+       "      <td>MA</td>\n",
+       "      <td>Massachusetts</td>\n",
+       "      <td>WA</td>\n",
+       "      <td>Washington</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>21</th>\n",
+       "      <td>MI</td>\n",
+       "      <td>Michigan</td>\n",
+       "      <td>WV</td>\n",
+       "      <td>West Virginia</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>22</th>\n",
+       "      <td>MN</td>\n",
+       "      <td>Minnesota</td>\n",
+       "      <td>WI</td>\n",
+       "      <td>Wisconsin</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>23</th>\n",
+       "      <td>MS</td>\n",
+       "      <td>Mississippi</td>\n",
+       "      <td>WY</td>\n",
+       "      <td>Wyoming</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>24</th>\n",
+       "      <td>MO</td>\n",
+       "      <td>Missouri</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>25</th>\n",
+       "      <td>MT</td>\n",
+       "      <td>Montana</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
        "</div>"
       ],
       "text/plain": [
-       "        A to M                    N to Z                \n",
-       "  abbreviation         name abbreviation            name\n",
-       "0           AL      Alabama           NE        Nebraska\n",
-       "1           AK       Alaska           NV          Nevada\n",
-       "2           AZ      Arizona           NH   New Hampshire\n",
-       "3           AR     Arkansas           NJ      New Jersey\n",
-       "4           CA   California           NM      New Mexico\n",
-       "5           CO     Colorado           NY        New York\n",
-       "6           CT  Connecticut           NC  North Carolina\n",
-       "7           DE     Delaware           ND    North Dakota\n",
-       "8           FL      Florida           OH            Ohio\n",
-       "9           GA      Georgia           OK        Oklahoma"
+       "         A to M                      N to Z                \n",
+       "   abbreviation           name abbreviation            name\n",
+       "0            AL        Alabama           NE        Nebraska\n",
+       "1            AK         Alaska           NV          Nevada\n",
+       "2            AZ        Arizona           NH   New Hampshire\n",
+       "3            AR       Arkansas           NJ      New Jersey\n",
+       "4            CA     California           NM      New Mexico\n",
+       "5            CO       Colorado           NY        New York\n",
+       "6            CT    Connecticut           NC  North Carolina\n",
+       "7            DE       Delaware           ND    North Dakota\n",
+       "8            FL        Florida           OH            Ohio\n",
+       "9            GA        Georgia           OK        Oklahoma\n",
+       "10           HI         Hawaii           OR          Oregon\n",
+       "11           ID          Idaho           PA    Pennsylvania\n",
+       "12           IL       Illinois           RI    Rhode Island\n",
+       "13           IN        Indiana           SC  South Carolina\n",
+       "14           IA           Iowa           SD    South Dakota\n",
+       "15           KS         Kansas           TN       Tennessee\n",
+       "16           KY       Kentucky           TX           Texas\n",
+       "17           LA      Louisiana           UT            Utah\n",
+       "18           ME          Maine           VT         Vermont\n",
+       "19           MD       Maryland           VA        Virginia\n",
+       "20           MA  Massachusetts           WA      Washington\n",
+       "21           MI       Michigan           WV   West Virginia\n",
+       "22           MN      Minnesota           WI       Wisconsin\n",
+       "23           MS    Mississippi           WY         Wyoming\n",
+       "24           MO       Missouri          NaN             NaN\n",
+       "25           MT        Montana          NaN             NaN"
       ]
      },
-     "execution_count": 25,
+     "execution_count": 123,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "pd.concat([states_atom, states_ntoz], axis=1, keys=['A to M', 'N to Z']).head(10)"
+    "pd.concat([states_atom, states_ntoz], axis=1, keys=['A to M', 'N to Z'])"
    ]
   },
   {
@@ -1483,7 +1745,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -1491,324 +1753,31 @@
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>abbreviation</th>\n",
-       "      <th>name</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>AL</td>\n",
-       "      <td>Alabama</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>AK</td>\n",
-       "      <td>Alaska</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>AZ</td>\n",
-       "      <td>Arizona</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>AR</td>\n",
-       "      <td>Arkansas</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>CA</td>\n",
-       "      <td>California</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "  abbreviation        name\n",
-       "0           AL     Alabama\n",
-       "1           AK      Alaska\n",
-       "2           AZ     Arizona\n",
-       "3           AR    Arkansas\n",
-       "4           CA  California"
-      ]
-     },
-     "execution_count": 27,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "sc = pd.concat([states_atom, states_ntoz], ignore_index = True)\n",
-    "sc.head(5)"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": 38,
+   "execution_count": null,
+   "metadata": {
+    "collapsed": false,
+    "scrolled": true,
+    "slideshow": {
+     "slide_type": "slide"
+    }
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "scrolled": true
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>abbreviation</th>\n",
-       "      <th>name</th>\n",
-       "      <th>capital</th>\n",
-       "      <th>latitude</th>\n",
-       "      <th>longitude</th>\n",
-       "      <th>name</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>AL</td>\n",
-       "      <td>Alabama</td>\n",
-       "      <td>Montgomery</td>\n",
-       "      <td>32.377716</td>\n",
-       "      <td>-86.300568</td>\n",
-       "      <td>Alabama</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>AK</td>\n",
-       "      <td>Alaska</td>\n",
-       "      <td>Juneau</td>\n",
-       "      <td>58.301598</td>\n",
-       "      <td>-134.420212</td>\n",
-       "      <td>Alaska</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>AZ</td>\n",
-       "      <td>Arizona</td>\n",
-       "      <td>Phoenix</td>\n",
-       "      <td>33.448143</td>\n",
-       "      <td>-112.096962</td>\n",
-       "      <td>Arizona</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>AR</td>\n",
-       "      <td>Arkansas</td>\n",
-       "      <td>Little Rock</td>\n",
-       "      <td>34.746613</td>\n",
-       "      <td>-92.288986</td>\n",
-       "      <td>Arkansas</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>CA</td>\n",
-       "      <td>California</td>\n",
-       "      <td>Sacramento</td>\n",
-       "      <td>38.576668</td>\n",
-       "      <td>-121.493629</td>\n",
-       "      <td>California</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "  abbreviation        name      capital   latitude   longitude        name\n",
-       "0           AL     Alabama   Montgomery  32.377716  -86.300568     Alabama\n",
-       "1           AK      Alaska       Juneau  58.301598 -134.420212      Alaska\n",
-       "2           AZ     Arizona      Phoenix  33.448143 -112.096962     Arizona\n",
-       "3           AR    Arkansas  Little Rock  34.746613  -92.288986    Arkansas\n",
-       "4           CA  California   Sacramento  38.576668 -121.493629  California"
-      ]
-     },
-     "execution_count": 38,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.concat([sc, capitals], axis=1).head(5)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 39,
-   "metadata": {
-    "collapsed": false,
-    "scrolled": true
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr>\n",
-       "      <th></th>\n",
-       "      <th colspan=\"2\" halign=\"left\">A to M</th>\n",
-       "      <th colspan=\"4\" halign=\"left\">N to Z</th>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th></th>\n",
-       "      <th>abbreviation</th>\n",
-       "      <th>name</th>\n",
-       "      <th>capital</th>\n",
-       "      <th>latitude</th>\n",
-       "      <th>longitude</th>\n",
-       "      <th>name</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>AL</td>\n",
-       "      <td>Alabama</td>\n",
-       "      <td>Montgomery</td>\n",
-       "      <td>32.377716</td>\n",
-       "      <td>-86.300568</td>\n",
-       "      <td>Alabama</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>AK</td>\n",
-       "      <td>Alaska</td>\n",
-       "      <td>Juneau</td>\n",
-       "      <td>58.301598</td>\n",
-       "      <td>-134.420212</td>\n",
-       "      <td>Alaska</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>AZ</td>\n",
-       "      <td>Arizona</td>\n",
-       "      <td>Phoenix</td>\n",
-       "      <td>33.448143</td>\n",
-       "      <td>-112.096962</td>\n",
-       "      <td>Arizona</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>AR</td>\n",
-       "      <td>Arkansas</td>\n",
-       "      <td>Little Rock</td>\n",
-       "      <td>34.746613</td>\n",
-       "      <td>-92.288986</td>\n",
-       "      <td>Arkansas</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>CA</td>\n",
-       "      <td>California</td>\n",
-       "      <td>Sacramento</td>\n",
-       "      <td>38.576668</td>\n",
-       "      <td>-121.493629</td>\n",
-       "      <td>California</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "        A to M                   N to Z                                   \n",
-       "  abbreviation        name      capital   latitude   longitude        name\n",
-       "0           AL     Alabama   Montgomery  32.377716  -86.300568     Alabama\n",
-       "1           AK      Alaska       Juneau  58.301598 -134.420212      Alaska\n",
-       "2           AZ     Arizona      Phoenix  33.448143 -112.096962     Arizona\n",
-       "3           AR    Arkansas  Little Rock  34.746613  -92.288986    Arkansas\n",
-       "4           CA  California   Sacramento  38.576668 -121.493629  California"
-      ]
-     },
-     "execution_count": 39,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.concat([sc, capitals], axis=1, keys=['A to M', 'N to Z']).head(5)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 40,
-   "metadata": {
-    "collapsed": false
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>Capitol</th>\n",
-       "      <th>State</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>Montgomery</td>\n",
-       "      <td>AL</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>Juneau</td>\n",
-       "      <td>AK</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>Phoenix</td>\n",
-       "      <td>AZ</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>Little Rock</td>\n",
-       "      <td>AR</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>Sacramento</td>\n",
-       "      <td>CA</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "       Capitol State\n",
-       "0   Montgomery    AL\n",
-       "1       Juneau    AK\n",
-       "2      Phoenix    AZ\n",
-       "3  Little Rock    AR\n",
-       "4   Sacramento    CA"
-      ]
-     },
-     "execution_count": 40,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.concat([capitals['capital'], sc['abbreviation'], sc['name']], axis=1, keys=['Capitol', 'State']).head(5)"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "markdown",
@@ -1889,7 +1858,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 41,
+   "execution_count": 136,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -1936,7 +1905,7 @@
        "2           AZ  Arizona"
       ]
      },
-     "execution_count": 41,
+     "execution_count": 136,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1947,7 +1916,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 42,
+   "execution_count": 137,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -2002,7 +1971,7 @@
        "2     Phoenix  33.448143 -112.096962  Arizona"
       ]
      },
-     "execution_count": 42,
+     "execution_count": 137,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2024,7 +1993,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 47,
+   "execution_count": 144,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -2089,26 +2058,431 @@
        "      <td>38.576668</td>\n",
        "      <td>-121.493629</td>\n",
        "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>CO</td>\n",
+       "      <td>Colorado</td>\n",
+       "      <td>Denver</td>\n",
+       "      <td>39.739227</td>\n",
+       "      <td>-104.984856</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>CT</td>\n",
+       "      <td>Connecticut</td>\n",
+       "      <td>Hartford</td>\n",
+       "      <td>41.764046</td>\n",
+       "      <td>-72.682198</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>DE</td>\n",
+       "      <td>Delaware</td>\n",
+       "      <td>Dover</td>\n",
+       "      <td>39.157307</td>\n",
+       "      <td>-75.519722</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>FL</td>\n",
+       "      <td>Florida</td>\n",
+       "      <td>Tallahassee</td>\n",
+       "      <td>30.438118</td>\n",
+       "      <td>-84.281296</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>GA</td>\n",
+       "      <td>Georgia</td>\n",
+       "      <td>Atlanta</td>\n",
+       "      <td>33.749027</td>\n",
+       "      <td>-84.388229</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>10</th>\n",
+       "      <td>HI</td>\n",
+       "      <td>Hawaii</td>\n",
+       "      <td>Honolulu</td>\n",
+       "      <td>21.307442</td>\n",
+       "      <td>-157.857376</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>ID</td>\n",
+       "      <td>Idaho</td>\n",
+       "      <td>Boise</td>\n",
+       "      <td>43.617775</td>\n",
+       "      <td>-116.199722</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>IL</td>\n",
+       "      <td>Illinois</td>\n",
+       "      <td>Springfield</td>\n",
+       "      <td>39.798363</td>\n",
+       "      <td>-89.654961</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>13</th>\n",
+       "      <td>IN</td>\n",
+       "      <td>Indiana</td>\n",
+       "      <td>Indianapolis</td>\n",
+       "      <td>39.768623</td>\n",
+       "      <td>-86.162643</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>14</th>\n",
+       "      <td>IA</td>\n",
+       "      <td>Iowa</td>\n",
+       "      <td>Des Moines</td>\n",
+       "      <td>41.591087</td>\n",
+       "      <td>-93.603729</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>15</th>\n",
+       "      <td>KS</td>\n",
+       "      <td>Kansas</td>\n",
+       "      <td>Topeka</td>\n",
+       "      <td>39.048191</td>\n",
+       "      <td>-95.677956</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>16</th>\n",
+       "      <td>KY</td>\n",
+       "      <td>Kentucky</td>\n",
+       "      <td>Frankfort</td>\n",
+       "      <td>38.186722</td>\n",
+       "      <td>-84.875374</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>17</th>\n",
+       "      <td>LA</td>\n",
+       "      <td>Louisiana</td>\n",
+       "      <td>Baton Rouge</td>\n",
+       "      <td>30.457069</td>\n",
+       "      <td>-91.187393</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>18</th>\n",
+       "      <td>ME</td>\n",
+       "      <td>Maine</td>\n",
+       "      <td>Augusta</td>\n",
+       "      <td>44.307167</td>\n",
+       "      <td>-69.781693</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>19</th>\n",
+       "      <td>MD</td>\n",
+       "      <td>Maryland</td>\n",
+       "      <td>Annapolis</td>\n",
+       "      <td>38.978764</td>\n",
+       "      <td>-76.490936</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>20</th>\n",
+       "      <td>MA</td>\n",
+       "      <td>Massachusetts</td>\n",
+       "      <td>Boston</td>\n",
+       "      <td>42.358162</td>\n",
+       "      <td>-71.063698</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>21</th>\n",
+       "      <td>MI</td>\n",
+       "      <td>Michigan</td>\n",
+       "      <td>Lansing</td>\n",
+       "      <td>42.733635</td>\n",
+       "      <td>-84.555328</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>22</th>\n",
+       "      <td>MN</td>\n",
+       "      <td>Minnesota</td>\n",
+       "      <td>St. Paul</td>\n",
+       "      <td>44.955097</td>\n",
+       "      <td>-93.102211</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>23</th>\n",
+       "      <td>MS</td>\n",
+       "      <td>Mississippi</td>\n",
+       "      <td>Jackson</td>\n",
+       "      <td>32.303848</td>\n",
+       "      <td>-90.182106</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>24</th>\n",
+       "      <td>MO</td>\n",
+       "      <td>Missouri</td>\n",
+       "      <td>Jefferson City</td>\n",
+       "      <td>38.579201</td>\n",
+       "      <td>-92.172935</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>25</th>\n",
+       "      <td>MT</td>\n",
+       "      <td>Montana</td>\n",
+       "      <td>Helena</td>\n",
+       "      <td>46.585709</td>\n",
+       "      <td>-112.018417</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>26</th>\n",
+       "      <td>NE</td>\n",
+       "      <td>Nebraska</td>\n",
+       "      <td>Lincoln</td>\n",
+       "      <td>40.808075</td>\n",
+       "      <td>-96.699654</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>27</th>\n",
+       "      <td>NV</td>\n",
+       "      <td>Nevada</td>\n",
+       "      <td>Carson City</td>\n",
+       "      <td>39.163914</td>\n",
+       "      <td>-119.766121</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>28</th>\n",
+       "      <td>NH</td>\n",
+       "      <td>New Hampshire</td>\n",
+       "      <td>Concord</td>\n",
+       "      <td>43.206898</td>\n",
+       "      <td>-71.537994</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>29</th>\n",
+       "      <td>NJ</td>\n",
+       "      <td>New Jersey</td>\n",
+       "      <td>Trenton</td>\n",
+       "      <td>40.220596</td>\n",
+       "      <td>-74.769913</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>30</th>\n",
+       "      <td>NM</td>\n",
+       "      <td>New Mexico</td>\n",
+       "      <td>Santa Fe</td>\n",
+       "      <td>35.682240</td>\n",
+       "      <td>-105.939728</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>31</th>\n",
+       "      <td>NY</td>\n",
+       "      <td>New York</td>\n",
+       "      <td>Albany</td>\n",
+       "      <td>42.652843</td>\n",
+       "      <td>-73.757874</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>32</th>\n",
+       "      <td>NC</td>\n",
+       "      <td>North Carolina</td>\n",
+       "      <td>Raleigh</td>\n",
+       "      <td>35.780430</td>\n",
+       "      <td>-78.639099</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>33</th>\n",
+       "      <td>ND</td>\n",
+       "      <td>North Dakota</td>\n",
+       "      <td>Bismarck</td>\n",
+       "      <td>46.820850</td>\n",
+       "      <td>-100.783318</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>34</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>Ohio</td>\n",
+       "      <td>Columbus</td>\n",
+       "      <td>39.961346</td>\n",
+       "      <td>-82.999069</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>35</th>\n",
+       "      <td>OK</td>\n",
+       "      <td>Oklahoma</td>\n",
+       "      <td>Oklahoma City</td>\n",
+       "      <td>35.492207</td>\n",
+       "      <td>-97.503342</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>36</th>\n",
+       "      <td>OR</td>\n",
+       "      <td>Oregon</td>\n",
+       "      <td>Salem</td>\n",
+       "      <td>44.938461</td>\n",
+       "      <td>-123.030403</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>37</th>\n",
+       "      <td>PA</td>\n",
+       "      <td>Pennsylvania</td>\n",
+       "      <td>Harrisburg</td>\n",
+       "      <td>40.264378</td>\n",
+       "      <td>-76.883598</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>38</th>\n",
+       "      <td>RI</td>\n",
+       "      <td>Rhode Island</td>\n",
+       "      <td>Providence</td>\n",
+       "      <td>41.830914</td>\n",
+       "      <td>-71.414963</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>39</th>\n",
+       "      <td>SC</td>\n",
+       "      <td>South Carolina</td>\n",
+       "      <td>Columbia</td>\n",
+       "      <td>34.000343</td>\n",
+       "      <td>-81.033211</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>40</th>\n",
+       "      <td>SD</td>\n",
+       "      <td>South Dakota</td>\n",
+       "      <td>Pierre</td>\n",
+       "      <td>44.367031</td>\n",
+       "      <td>-100.346405</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>41</th>\n",
+       "      <td>TN</td>\n",
+       "      <td>Tennessee</td>\n",
+       "      <td>Nashville</td>\n",
+       "      <td>36.165810</td>\n",
+       "      <td>-86.784241</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>42</th>\n",
+       "      <td>TX</td>\n",
+       "      <td>Texas</td>\n",
+       "      <td>Austin</td>\n",
+       "      <td>30.274670</td>\n",
+       "      <td>-97.740349</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>43</th>\n",
+       "      <td>UT</td>\n",
+       "      <td>Utah</td>\n",
+       "      <td>Salt Lake City</td>\n",
+       "      <td>40.777477</td>\n",
+       "      <td>-111.888237</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>44</th>\n",
+       "      <td>VT</td>\n",
+       "      <td>Vermont</td>\n",
+       "      <td>Montpelier</td>\n",
+       "      <td>44.262436</td>\n",
+       "      <td>-72.580536</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>45</th>\n",
+       "      <td>VA</td>\n",
+       "      <td>Virginia</td>\n",
+       "      <td>Richmond</td>\n",
+       "      <td>37.538857</td>\n",
+       "      <td>-77.433640</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>46</th>\n",
+       "      <td>WA</td>\n",
+       "      <td>Washington</td>\n",
+       "      <td>Olympia</td>\n",
+       "      <td>47.035805</td>\n",
+       "      <td>-122.905014</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>47</th>\n",
+       "      <td>WV</td>\n",
+       "      <td>West Virginia</td>\n",
+       "      <td>Charleston</td>\n",
+       "      <td>38.336246</td>\n",
+       "      <td>-81.612328</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>48</th>\n",
+       "      <td>WI</td>\n",
+       "      <td>Wisconsin</td>\n",
+       "      <td>Madison</td>\n",
+       "      <td>43.074684</td>\n",
+       "      <td>-89.384445</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>49</th>\n",
+       "      <td>WY</td>\n",
+       "      <td>Wyoming</td>\n",
+       "      <td>Cheyenne</td>\n",
+       "      <td>41.140259</td>\n",
+       "      <td>-104.820236</td>\n",
+       "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
        "</div>"
       ],
       "text/plain": [
-       "  abbreviation        name      capital   latitude   longitude\n",
-       "0           AL     Alabama   Montgomery  32.377716  -86.300568\n",
-       "1           AK      Alaska       Juneau  58.301598 -134.420212\n",
-       "2           AZ     Arizona      Phoenix  33.448143 -112.096962\n",
-       "3           AR    Arkansas  Little Rock  34.746613  -92.288986\n",
-       "4           CA  California   Sacramento  38.576668 -121.493629"
+       "   abbreviation            name         capital   latitude   longitude\n",
+       "0            AL         Alabama      Montgomery  32.377716  -86.300568\n",
+       "1            AK          Alaska          Juneau  58.301598 -134.420212\n",
+       "2            AZ         Arizona         Phoenix  33.448143 -112.096962\n",
+       "3            AR        Arkansas     Little Rock  34.746613  -92.288986\n",
+       "4            CA      California      Sacramento  38.576668 -121.493629\n",
+       "5            CO        Colorado          Denver  39.739227 -104.984856\n",
+       "6            CT     Connecticut        Hartford  41.764046  -72.682198\n",
+       "7            DE        Delaware           Dover  39.157307  -75.519722\n",
+       "8            FL         Florida     Tallahassee  30.438118  -84.281296\n",
+       "9            GA         Georgia         Atlanta  33.749027  -84.388229\n",
+       "10           HI          Hawaii        Honolulu  21.307442 -157.857376\n",
+       "11           ID           Idaho           Boise  43.617775 -116.199722\n",
+       "12           IL        Illinois     Springfield  39.798363  -89.654961\n",
+       "13           IN         Indiana    Indianapolis  39.768623  -86.162643\n",
+       "14           IA            Iowa      Des Moines  41.591087  -93.603729\n",
+       "15           KS          Kansas          Topeka  39.048191  -95.677956\n",
+       "16           KY        Kentucky       Frankfort  38.186722  -84.875374\n",
+       "17           LA       Louisiana     Baton Rouge  30.457069  -91.187393\n",
+       "18           ME           Maine         Augusta  44.307167  -69.781693\n",
+       "19           MD        Maryland       Annapolis  38.978764  -76.490936\n",
+       "20           MA   Massachusetts          Boston  42.358162  -71.063698\n",
+       "21           MI        Michigan         Lansing  42.733635  -84.555328\n",
+       "22           MN       Minnesota        St. Paul  44.955097  -93.102211\n",
+       "23           MS     Mississippi         Jackson  32.303848  -90.182106\n",
+       "24           MO        Missouri  Jefferson City  38.579201  -92.172935\n",
+       "25           MT         Montana          Helena  46.585709 -112.018417\n",
+       "26           NE        Nebraska         Lincoln  40.808075  -96.699654\n",
+       "27           NV          Nevada     Carson City  39.163914 -119.766121\n",
+       "28           NH   New Hampshire         Concord  43.206898  -71.537994\n",
+       "29           NJ      New Jersey         Trenton  40.220596  -74.769913\n",
+       "30           NM      New Mexico        Santa Fe  35.682240 -105.939728\n",
+       "31           NY        New York          Albany  42.652843  -73.757874\n",
+       "32           NC  North Carolina         Raleigh  35.780430  -78.639099\n",
+       "33           ND    North Dakota        Bismarck  46.820850 -100.783318\n",
+       "34           OH            Ohio        Columbus  39.961346  -82.999069\n",
+       "35           OK        Oklahoma   Oklahoma City  35.492207  -97.503342\n",
+       "36           OR          Oregon           Salem  44.938461 -123.030403\n",
+       "37           PA    Pennsylvania      Harrisburg  40.264378  -76.883598\n",
+       "38           RI    Rhode Island      Providence  41.830914  -71.414963\n",
+       "39           SC  South Carolina        Columbia  34.000343  -81.033211\n",
+       "40           SD    South Dakota          Pierre  44.367031 -100.346405\n",
+       "41           TN       Tennessee       Nashville  36.165810  -86.784241\n",
+       "42           TX           Texas          Austin  30.274670  -97.740349\n",
+       "43           UT            Utah  Salt Lake City  40.777477 -111.888237\n",
+       "44           VT         Vermont      Montpelier  44.262436  -72.580536\n",
+       "45           VA        Virginia        Richmond  37.538857  -77.433640\n",
+       "46           WA      Washington         Olympia  47.035805 -122.905014\n",
+       "47           WV   West Virginia      Charleston  38.336246  -81.612328\n",
+       "48           WI       Wisconsin         Madison  43.074684  -89.384445\n",
+       "49           WY         Wyoming        Cheyenne  41.140259 -104.820236"
       ]
      },
-     "execution_count": 47,
+     "execution_count": 144,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "sc.merge(capitals).head(5)"
+    "sc.merge(capitals)"
    ]
   },
   {
@@ -2157,7 +2531,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 48,
+   "execution_count": 192,
    "metadata": {
     "collapsed": true,
     "slideshow": {
@@ -2172,7 +2546,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 49,
+   "execution_count": 193,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -2261,7 +2635,7 @@
        "9           GA      Georgia"
       ]
      },
-     "execution_count": 49,
+     "execution_count": 193,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2272,7 +2646,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 50,
+   "execution_count": 194,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -2383,7 +2757,7 @@
        "14    Des Moines  41.591087  -93.603729         Iowa"
       ]
      },
-     "execution_count": 50,
+     "execution_count": 194,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2405,7 +2779,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 51,
+   "execution_count": 195,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -2482,7 +2856,7 @@
        "4           GA      Georgia      Atlanta  33.749027  -84.388229"
       ]
      },
-     "execution_count": 51,
+     "execution_count": 195,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2591,15 +2965,6 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  },
-  {
    "cell_type": "markdown",
    "metadata": {
     "slideshow": {
@@ -2616,7 +2981,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 55,
+   "execution_count": 197,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -2631,7 +2996,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 56,
+   "execution_count": 198,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -2720,7 +3085,7 @@
        "49           WY        Wyoming"
       ]
      },
-     "execution_count": 56,
+     "execution_count": 198,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2731,7 +3096,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 57,
+   "execution_count": 199,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -2922,7 +3287,7 @@
        "49        Cheyenne  41.140259 -104.820236         Wyoming"
       ]
      },
-     "execution_count": 57,
+     "execution_count": 199,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2933,402 +3298,39 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 64,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "slideshow": {
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>abbreviation</th>\n",
-       "      <th>name</th>\n",
-       "      <th>capital</th>\n",
-       "      <th>latitude</th>\n",
-       "      <th>longitude</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>SD</td>\n",
-       "      <td>South Dakota</td>\n",
-       "      <td>Pierre</td>\n",
-       "      <td>44.367031</td>\n",
-       "      <td>-100.346405</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>TN</td>\n",
-       "      <td>Tennessee</td>\n",
-       "      <td>Nashville</td>\n",
-       "      <td>36.165810</td>\n",
-       "      <td>-86.784241</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>TX</td>\n",
-       "      <td>Texas</td>\n",
-       "      <td>Austin</td>\n",
-       "      <td>30.274670</td>\n",
-       "      <td>-97.740349</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>UT</td>\n",
-       "      <td>Utah</td>\n",
-       "      <td>Salt Lake City</td>\n",
-       "      <td>40.777477</td>\n",
-       "      <td>-111.888237</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>VT</td>\n",
-       "      <td>Vermont</td>\n",
-       "      <td>Montpelier</td>\n",
-       "      <td>44.262436</td>\n",
-       "      <td>-72.580536</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>5</th>\n",
-       "      <td>VA</td>\n",
-       "      <td>Virginia</td>\n",
-       "      <td>Richmond</td>\n",
-       "      <td>37.538857</td>\n",
-       "      <td>-77.433640</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>6</th>\n",
-       "      <td>WA</td>\n",
-       "      <td>Washington</td>\n",
-       "      <td>Olympia</td>\n",
-       "      <td>47.035805</td>\n",
-       "      <td>-122.905014</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>7</th>\n",
-       "      <td>WV</td>\n",
-       "      <td>West Virginia</td>\n",
-       "      <td>Charleston</td>\n",
-       "      <td>38.336246</td>\n",
-       "      <td>-81.612328</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>8</th>\n",
-       "      <td>WI</td>\n",
-       "      <td>Wisconsin</td>\n",
-       "      <td>Madison</td>\n",
-       "      <td>43.074684</td>\n",
-       "      <td>-89.384445</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>9</th>\n",
-       "      <td>WY</td>\n",
-       "      <td>Wyoming</td>\n",
-       "      <td>Cheyenne</td>\n",
-       "      <td>41.140259</td>\n",
-       "      <td>-104.820236</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "  abbreviation           name         capital   latitude   longitude\n",
-       "0           SD   South Dakota          Pierre  44.367031 -100.346405\n",
-       "1           TN      Tennessee       Nashville  36.165810  -86.784241\n",
-       "2           TX          Texas          Austin  30.274670  -97.740349\n",
-       "3           UT           Utah  Salt Lake City  40.777477 -111.888237\n",
-       "4           VT        Vermont      Montpelier  44.262436  -72.580536\n",
-       "5           VA       Virginia        Richmond  37.538857  -77.433640\n",
-       "6           WA     Washington         Olympia  47.035805 -122.905014\n",
-       "7           WV  West Virginia      Charleston  38.336246  -81.612328\n",
-       "8           WI      Wisconsin         Madison  43.074684  -89.384445\n",
-       "9           WY        Wyoming        Cheyenne  41.140259 -104.820236"
-      ]
-     },
-     "execution_count": 64,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.merge(last_ten, last_twenty)"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": 62,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "slideshow": {
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>capital</th>\n",
-       "      <th>latitude</th>\n",
-       "      <th>longitude</th>\n",
-       "      <th>name</th>\n",
-       "      <th>abbreviation</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>Pierre</td>\n",
-       "      <td>44.367031</td>\n",
-       "      <td>-100.346405</td>\n",
-       "      <td>South Dakota</td>\n",
-       "      <td>SD</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>Nashville</td>\n",
-       "      <td>36.165810</td>\n",
-       "      <td>-86.784241</td>\n",
-       "      <td>Tennessee</td>\n",
-       "      <td>TN</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>Austin</td>\n",
-       "      <td>30.274670</td>\n",
-       "      <td>-97.740349</td>\n",
-       "      <td>Texas</td>\n",
-       "      <td>TX</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>Salt Lake City</td>\n",
-       "      <td>40.777477</td>\n",
-       "      <td>-111.888237</td>\n",
-       "      <td>Utah</td>\n",
-       "      <td>UT</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>Montpelier</td>\n",
-       "      <td>44.262436</td>\n",
-       "      <td>-72.580536</td>\n",
-       "      <td>Vermont</td>\n",
-       "      <td>VT</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>5</th>\n",
-       "      <td>Richmond</td>\n",
-       "      <td>37.538857</td>\n",
-       "      <td>-77.433640</td>\n",
-       "      <td>Virginia</td>\n",
-       "      <td>VA</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>6</th>\n",
-       "      <td>Olympia</td>\n",
-       "      <td>47.035805</td>\n",
-       "      <td>-122.905014</td>\n",
-       "      <td>Washington</td>\n",
-       "      <td>WA</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>7</th>\n",
-       "      <td>Charleston</td>\n",
-       "      <td>38.336246</td>\n",
-       "      <td>-81.612328</td>\n",
-       "      <td>West Virginia</td>\n",
-       "      <td>WV</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>8</th>\n",
-       "      <td>Madison</td>\n",
-       "      <td>43.074684</td>\n",
-       "      <td>-89.384445</td>\n",
-       "      <td>Wisconsin</td>\n",
-       "      <td>WI</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>9</th>\n",
-       "      <td>Cheyenne</td>\n",
-       "      <td>41.140259</td>\n",
-       "      <td>-104.820236</td>\n",
-       "      <td>Wyoming</td>\n",
-       "      <td>WY</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "          capital   latitude   longitude           name abbreviation\n",
-       "0          Pierre  44.367031 -100.346405   South Dakota           SD\n",
-       "1       Nashville  36.165810  -86.784241      Tennessee           TN\n",
-       "2          Austin  30.274670  -97.740349          Texas           TX\n",
-       "3  Salt Lake City  40.777477 -111.888237           Utah           UT\n",
-       "4      Montpelier  44.262436  -72.580536        Vermont           VT\n",
-       "5        Richmond  37.538857  -77.433640       Virginia           VA\n",
-       "6         Olympia  47.035805 -122.905014     Washington           WA\n",
-       "7      Charleston  38.336246  -81.612328  West Virginia           WV\n",
-       "8         Madison  43.074684  -89.384445      Wisconsin           WI\n",
-       "9        Cheyenne  41.140259 -104.820236        Wyoming           WY"
-      ]
-     },
-     "execution_count": 62,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "last_twenty.merge(last_ten)"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": 63,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "slideshow": {
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>abbreviation</th>\n",
-       "      <th>name</th>\n",
-       "      <th>capital</th>\n",
-       "      <th>latitude</th>\n",
-       "      <th>longitude</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>SD</td>\n",
-       "      <td>South Dakota</td>\n",
-       "      <td>Pierre</td>\n",
-       "      <td>44.367031</td>\n",
-       "      <td>-100.346405</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>TN</td>\n",
-       "      <td>Tennessee</td>\n",
-       "      <td>Nashville</td>\n",
-       "      <td>36.165810</td>\n",
-       "      <td>-86.784241</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>TX</td>\n",
-       "      <td>Texas</td>\n",
-       "      <td>Austin</td>\n",
-       "      <td>30.274670</td>\n",
-       "      <td>-97.740349</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>UT</td>\n",
-       "      <td>Utah</td>\n",
-       "      <td>Salt Lake City</td>\n",
-       "      <td>40.777477</td>\n",
-       "      <td>-111.888237</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>VT</td>\n",
-       "      <td>Vermont</td>\n",
-       "      <td>Montpelier</td>\n",
-       "      <td>44.262436</td>\n",
-       "      <td>-72.580536</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>5</th>\n",
-       "      <td>VA</td>\n",
-       "      <td>Virginia</td>\n",
-       "      <td>Richmond</td>\n",
-       "      <td>37.538857</td>\n",
-       "      <td>-77.433640</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>6</th>\n",
-       "      <td>WA</td>\n",
-       "      <td>Washington</td>\n",
-       "      <td>Olympia</td>\n",
-       "      <td>47.035805</td>\n",
-       "      <td>-122.905014</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>7</th>\n",
-       "      <td>WV</td>\n",
-       "      <td>West Virginia</td>\n",
-       "      <td>Charleston</td>\n",
-       "      <td>38.336246</td>\n",
-       "      <td>-81.612328</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>8</th>\n",
-       "      <td>WI</td>\n",
-       "      <td>Wisconsin</td>\n",
-       "      <td>Madison</td>\n",
-       "      <td>43.074684</td>\n",
-       "      <td>-89.384445</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>9</th>\n",
-       "      <td>WY</td>\n",
-       "      <td>Wyoming</td>\n",
-       "      <td>Cheyenne</td>\n",
-       "      <td>41.140259</td>\n",
-       "      <td>-104.820236</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "  abbreviation           name         capital   latitude   longitude\n",
-       "0           SD   South Dakota          Pierre  44.367031 -100.346405\n",
-       "1           TN      Tennessee       Nashville  36.165810  -86.784241\n",
-       "2           TX          Texas          Austin  30.274670  -97.740349\n",
-       "3           UT           Utah  Salt Lake City  40.777477 -111.888237\n",
-       "4           VT        Vermont      Montpelier  44.262436  -72.580536\n",
-       "5           VA       Virginia        Richmond  37.538857  -77.433640\n",
-       "6           WA     Washington         Olympia  47.035805 -122.905014\n",
-       "7           WV  West Virginia      Charleston  38.336246  -81.612328\n",
-       "8           WI      Wisconsin         Madison  43.074684  -89.384445\n",
-       "9           WY        Wyoming        Cheyenne  41.140259 -104.820236"
-      ]
-     },
-     "execution_count": 63,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "last_ten.merge(last_twenty)"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "markdown",
@@ -3354,7 +3356,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 65,
+   "execution_count": 203,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -3443,7 +3445,7 @@
        "9           GA      Georgia"
       ]
      },
-     "execution_count": 65,
+     "execution_count": 203,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -3454,7 +3456,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 66,
+   "execution_count": 204,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -3565,7 +3567,7 @@
        "14    Des Moines  41.591087  -93.603729         Iowa"
       ]
      },
-     "execution_count": 66,
+     "execution_count": 204,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -3587,7 +3589,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 67,
+   "execution_count": 205,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -3709,7 +3711,7 @@
        "9           GA      Georgia      Atlanta  33.749027  -84.388229"
       ]
      },
-     "execution_count": 67,
+     "execution_count": 205,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -3731,7 +3733,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 69,
+   "execution_count": 190,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -3853,7 +3855,7 @@
        "9           GA      Georgia      Atlanta  33.749027  -84.388229"
       ]
      },
-     "execution_count": 69,
+     "execution_count": 190,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -3875,7 +3877,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 70,
+   "execution_count": 206,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -3997,7 +3999,7 @@
        "9    Des Moines  41.591087  -93.603729         Iowa          NaN"
       ]
      },
-     "execution_count": 70,
+     "execution_count": 206,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -4030,7 +4032,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 71,
+   "execution_count": 214,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -4152,7 +4154,7 @@
        "9          NaN         Iowa    Des Moines  41.591087  -93.603729"
       ]
      },
-     "execution_count": 71,
+     "execution_count": 214,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -4196,7 +4198,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 73,
+   "execution_count": 250,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -4363,7 +4365,7 @@
        "14          NaN         Iowa    Des Moines  41.591087  -93.603729"
       ]
      },
-     "execution_count": 73,
+     "execution_count": 250,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -4392,7 +4394,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 74,
+   "execution_count": 228,
    "metadata": {
     "collapsed": true,
     "slideshow": {
@@ -4406,7 +4408,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 75,
+   "execution_count": 241,
    "metadata": {
     "collapsed": true,
     "slideshow": {
@@ -4420,280 +4422,39 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 77,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "slideshow": {
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>int-numbers</th>\n",
-       "      <th>lc-letter</th>\n",
-       "      <th>str-numbers</th>\n",
-       "      <th>uc-letter</th>\n",
-       "      <th>letters</th>\n",
-       "      <th>phonetics</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>1</td>\n",
-       "      <td>a</td>\n",
-       "      <td>one</td>\n",
-       "      <td>A</td>\n",
-       "      <td>a</td>\n",
-       "      <td>alpha</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>2</td>\n",
-       "      <td>b</td>\n",
-       "      <td>two</td>\n",
-       "      <td>B</td>\n",
-       "      <td>b</td>\n",
-       "      <td>bravo</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>3</td>\n",
-       "      <td>c</td>\n",
-       "      <td>three</td>\n",
-       "      <td>C</td>\n",
-       "      <td>c</td>\n",
-       "      <td>charlie</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "   int-numbers lc-letter str-numbers uc-letter letters phonetics\n",
-       "0            1         a         one         A       a     alpha\n",
-       "1            2         b         two         B       b     bravo\n",
-       "2            3         c       three         C       c   charlie"
-      ]
-     },
-     "execution_count": 77,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.merge(df_long, df_short)\n",
-    "\n",
-    "#it is an inner join and is joined on the int-number column"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": 79,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "slideshow": {
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>int-numbers</th>\n",
-       "      <th>lc-letter</th>\n",
-       "      <th>str-numbers</th>\n",
-       "      <th>uc-letter</th>\n",
-       "      <th>letters</th>\n",
-       "      <th>phonetics</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>1</td>\n",
-       "      <td>a</td>\n",
-       "      <td>one</td>\n",
-       "      <td>A</td>\n",
-       "      <td>a</td>\n",
-       "      <td>alpha</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>2</td>\n",
-       "      <td>b</td>\n",
-       "      <td>two</td>\n",
-       "      <td>B</td>\n",
-       "      <td>b</td>\n",
-       "      <td>bravo</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>3</td>\n",
-       "      <td>c</td>\n",
-       "      <td>three</td>\n",
-       "      <td>C</td>\n",
-       "      <td>c</td>\n",
-       "      <td>charlie</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>4</td>\n",
-       "      <td>d</td>\n",
-       "      <td>four</td>\n",
-       "      <td>D</td>\n",
-       "      <td>NaN</td>\n",
-       "      <td>NaN</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>5</td>\n",
-       "      <td>e</td>\n",
-       "      <td>five</td>\n",
-       "      <td>E</td>\n",
-       "      <td>NaN</td>\n",
-       "      <td>NaN</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "   int-numbers lc-letter str-numbers uc-letter letters phonetics\n",
-       "0            1         a         one         A       a     alpha\n",
-       "1            2         b         two         B       b     bravo\n",
-       "2            3         c       three         C       c   charlie\n",
-       "3            4         d        four         D     NaN       NaN\n",
-       "4            5         e        five         E     NaN       NaN"
-      ]
-     },
-     "execution_count": 79,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.merge(df_long, df_short, how='left')"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": 88,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "slideshow": {
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>int-numbers_x</th>\n",
-       "      <th>lc-letter</th>\n",
-       "      <th>str-numbers</th>\n",
-       "      <th>uc-letter</th>\n",
-       "      <th>int-numbers_y</th>\n",
-       "      <th>letters</th>\n",
-       "      <th>phonetics</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>1</td>\n",
-       "      <td>a</td>\n",
-       "      <td>one</td>\n",
-       "      <td>A</td>\n",
-       "      <td>1.0</td>\n",
-       "      <td>a</td>\n",
-       "      <td>alpha</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>2</td>\n",
-       "      <td>b</td>\n",
-       "      <td>two</td>\n",
-       "      <td>B</td>\n",
-       "      <td>2.0</td>\n",
-       "      <td>b</td>\n",
-       "      <td>bravo</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>3</td>\n",
-       "      <td>c</td>\n",
-       "      <td>three</td>\n",
-       "      <td>C</td>\n",
-       "      <td>3.0</td>\n",
-       "      <td>c</td>\n",
-       "      <td>charlie</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>4</td>\n",
-       "      <td>d</td>\n",
-       "      <td>four</td>\n",
-       "      <td>D</td>\n",
-       "      <td>NaN</td>\n",
-       "      <td>NaN</td>\n",
-       "      <td>NaN</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>5</td>\n",
-       "      <td>e</td>\n",
-       "      <td>five</td>\n",
-       "      <td>E</td>\n",
-       "      <td>NaN</td>\n",
-       "      <td>NaN</td>\n",
-       "      <td>NaN</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "   int-numbers_x lc-letter str-numbers uc-letter  int-numbers_y letters  \\\n",
-       "0              1         a         one         A            1.0       a   \n",
-       "1              2         b         two         B            2.0       b   \n",
-       "2              3         c       three         C            3.0       c   \n",
-       "3              4         d        four         D            NaN     NaN   \n",
-       "4              5         e        five         E            NaN     NaN   \n",
-       "\n",
-       "  phonetics  \n",
-       "0     alpha  \n",
-       "1     bravo  \n",
-       "2   charlie  \n",
-       "3       NaN  \n",
-       "4       NaN  "
-      ]
-     },
-     "execution_count": 88,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "pd.merge(df_long, df_short, how='left', left_on='lc-letter', right_on='letters')\n"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
@@ -4732,7 +4493,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 94,
+   "execution_count": 254,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -4779,20 +4540,290 @@
        "      <td>CA</td>\n",
        "      <td>California</td>\n",
        "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>CO</td>\n",
+       "      <td>Colorado</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>CT</td>\n",
+       "      <td>Connecticut</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>DE</td>\n",
+       "      <td>Delaware</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>FL</td>\n",
+       "      <td>Florida</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>GA</td>\n",
+       "      <td>Georgia</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>10</th>\n",
+       "      <td>HI</td>\n",
+       "      <td>Hawaii</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>ID</td>\n",
+       "      <td>Idaho</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>IL</td>\n",
+       "      <td>Illinois</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>13</th>\n",
+       "      <td>IN</td>\n",
+       "      <td>Indiana</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>14</th>\n",
+       "      <td>IA</td>\n",
+       "      <td>Iowa</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>15</th>\n",
+       "      <td>KS</td>\n",
+       "      <td>Kansas</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>16</th>\n",
+       "      <td>KY</td>\n",
+       "      <td>Kentucky</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>17</th>\n",
+       "      <td>LA</td>\n",
+       "      <td>Louisiana</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>18</th>\n",
+       "      <td>ME</td>\n",
+       "      <td>Maine</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>19</th>\n",
+       "      <td>MD</td>\n",
+       "      <td>Maryland</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>20</th>\n",
+       "      <td>MA</td>\n",
+       "      <td>Massachusetts</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>21</th>\n",
+       "      <td>MI</td>\n",
+       "      <td>Michigan</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>22</th>\n",
+       "      <td>MN</td>\n",
+       "      <td>Minnesota</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>23</th>\n",
+       "      <td>MS</td>\n",
+       "      <td>Mississippi</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>24</th>\n",
+       "      <td>MO</td>\n",
+       "      <td>Missouri</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>25</th>\n",
+       "      <td>MT</td>\n",
+       "      <td>Montana</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>NE</td>\n",
+       "      <td>Nebraska</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>NV</td>\n",
+       "      <td>Nevada</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>NH</td>\n",
+       "      <td>New Hampshire</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>NJ</td>\n",
+       "      <td>New Jersey</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>NM</td>\n",
+       "      <td>New Mexico</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>NY</td>\n",
+       "      <td>New York</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>NC</td>\n",
+       "      <td>North Carolina</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>ND</td>\n",
+       "      <td>North Dakota</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>Ohio</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>OK</td>\n",
+       "      <td>Oklahoma</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>10</th>\n",
+       "      <td>OR</td>\n",
+       "      <td>Oregon</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>PA</td>\n",
+       "      <td>Pennsylvania</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>RI</td>\n",
+       "      <td>Rhode Island</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>13</th>\n",
+       "      <td>SC</td>\n",
+       "      <td>South Carolina</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>14</th>\n",
+       "      <td>SD</td>\n",
+       "      <td>South Dakota</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>15</th>\n",
+       "      <td>TN</td>\n",
+       "      <td>Tennessee</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>16</th>\n",
+       "      <td>TX</td>\n",
+       "      <td>Texas</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>17</th>\n",
+       "      <td>UT</td>\n",
+       "      <td>Utah</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>18</th>\n",
+       "      <td>VT</td>\n",
+       "      <td>Vermont</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>19</th>\n",
+       "      <td>VA</td>\n",
+       "      <td>Virginia</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>20</th>\n",
+       "      <td>WA</td>\n",
+       "      <td>Washington</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>21</th>\n",
+       "      <td>WV</td>\n",
+       "      <td>West Virginia</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>22</th>\n",
+       "      <td>WI</td>\n",
+       "      <td>Wisconsin</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>23</th>\n",
+       "      <td>WY</td>\n",
+       "      <td>Wyoming</td>\n",
+       "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
        "</div>"
       ],
       "text/plain": [
-       "  abbreviation        name\n",
-       "0           AL     Alabama\n",
-       "1           AK      Alaska\n",
-       "2           AZ     Arizona\n",
-       "3           AR    Arkansas\n",
-       "4           CA  California"
+       "   abbreviation            name\n",
+       "0            AL         Alabama\n",
+       "1            AK          Alaska\n",
+       "2            AZ         Arizona\n",
+       "3            AR        Arkansas\n",
+       "4            CA      California\n",
+       "5            CO        Colorado\n",
+       "6            CT     Connecticut\n",
+       "7            DE        Delaware\n",
+       "8            FL         Florida\n",
+       "9            GA         Georgia\n",
+       "10           HI          Hawaii\n",
+       "11           ID           Idaho\n",
+       "12           IL        Illinois\n",
+       "13           IN         Indiana\n",
+       "14           IA            Iowa\n",
+       "15           KS          Kansas\n",
+       "16           KY        Kentucky\n",
+       "17           LA       Louisiana\n",
+       "18           ME           Maine\n",
+       "19           MD        Maryland\n",
+       "20           MA   Massachusetts\n",
+       "21           MI        Michigan\n",
+       "22           MN       Minnesota\n",
+       "23           MS     Mississippi\n",
+       "24           MO        Missouri\n",
+       "25           MT         Montana\n",
+       "0            NE        Nebraska\n",
+       "1            NV          Nevada\n",
+       "2            NH   New Hampshire\n",
+       "3            NJ      New Jersey\n",
+       "4            NM      New Mexico\n",
+       "5            NY        New York\n",
+       "6            NC  North Carolina\n",
+       "7            ND    North Dakota\n",
+       "8            OH            Ohio\n",
+       "9            OK        Oklahoma\n",
+       "10           OR          Oregon\n",
+       "11           PA    Pennsylvania\n",
+       "12           RI    Rhode Island\n",
+       "13           SC  South Carolina\n",
+       "14           SD    South Dakota\n",
+       "15           TN       Tennessee\n",
+       "16           TX           Texas\n",
+       "17           UT            Utah\n",
+       "18           VT         Vermont\n",
+       "19           VA        Virginia\n",
+       "20           WA      Washington\n",
+       "21           WV   West Virginia\n",
+       "22           WI       Wisconsin\n",
+       "23           WY         Wyoming"
       ]
      },
-     "execution_count": 94,
+     "execution_count": 254,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -4800,7 +4831,7 @@
    "source": [
     "# create a single state DataFrame\n",
     "states = pd.concat([states_atom, states_ntoz])\n",
-    "states.head(5)"
+    "states"
    ]
   },
   {
@@ -4816,7 +4847,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 90,
+   "execution_count": 255,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -4841,7 +4872,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 91,
+   "execution_count": 256,
    "metadata": {
     "collapsed": true,
     "slideshow": {
@@ -4866,7 +4897,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 93,
+   "execution_count": 261,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -4913,27 +4944,297 @@
        "      <td>C</td>\n",
        "      <td>10</td>\n",
        "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>C</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>C</td>\n",
+       "      <td>11</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>D</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>F</td>\n",
+       "      <td>7</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>G</td>\n",
+       "      <td>7</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>10</th>\n",
+       "      <td>H</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>I</td>\n",
+       "      <td>5</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>I</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>13</th>\n",
+       "      <td>I</td>\n",
+       "      <td>7</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>14</th>\n",
+       "      <td>I</td>\n",
+       "      <td>4</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>15</th>\n",
+       "      <td>K</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>16</th>\n",
+       "      <td>K</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>17</th>\n",
+       "      <td>L</td>\n",
+       "      <td>9</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>18</th>\n",
+       "      <td>M</td>\n",
+       "      <td>5</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>19</th>\n",
+       "      <td>M</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>20</th>\n",
+       "      <td>M</td>\n",
+       "      <td>13</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>21</th>\n",
+       "      <td>M</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>22</th>\n",
+       "      <td>M</td>\n",
+       "      <td>9</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>23</th>\n",
+       "      <td>M</td>\n",
+       "      <td>11</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>24</th>\n",
+       "      <td>M</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>25</th>\n",
+       "      <td>M</td>\n",
+       "      <td>7</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>N</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>N</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>N</td>\n",
+       "      <td>13</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>N</td>\n",
+       "      <td>10</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>N</td>\n",
+       "      <td>10</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>N</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>N</td>\n",
+       "      <td>14</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>N</td>\n",
+       "      <td>12</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>O</td>\n",
+       "      <td>4</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>O</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>10</th>\n",
+       "      <td>O</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11</th>\n",
+       "      <td>P</td>\n",
+       "      <td>12</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>12</th>\n",
+       "      <td>R</td>\n",
+       "      <td>12</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>13</th>\n",
+       "      <td>S</td>\n",
+       "      <td>14</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>14</th>\n",
+       "      <td>S</td>\n",
+       "      <td>12</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>15</th>\n",
+       "      <td>T</td>\n",
+       "      <td>9</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>16</th>\n",
+       "      <td>T</td>\n",
+       "      <td>5</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>17</th>\n",
+       "      <td>U</td>\n",
+       "      <td>4</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>18</th>\n",
+       "      <td>V</td>\n",
+       "      <td>7</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>19</th>\n",
+       "      <td>V</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>20</th>\n",
+       "      <td>W</td>\n",
+       "      <td>10</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>21</th>\n",
+       "      <td>W</td>\n",
+       "      <td>13</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>22</th>\n",
+       "      <td>W</td>\n",
+       "      <td>9</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>23</th>\n",
+       "      <td>W</td>\n",
+       "      <td>7</td>\n",
+       "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
        "</div>"
       ],
       "text/plain": [
-       "  letter  length\n",
-       "0      A       7\n",
-       "1      A       6\n",
-       "2      A       7\n",
-       "3      A       8\n",
-       "4      C      10"
+       "   letter  length\n",
+       "0       A       7\n",
+       "1       A       6\n",
+       "2       A       7\n",
+       "3       A       8\n",
+       "4       C      10\n",
+       "5       C       8\n",
+       "6       C      11\n",
+       "7       D       8\n",
+       "8       F       7\n",
+       "9       G       7\n",
+       "10      H       6\n",
+       "11      I       5\n",
+       "12      I       8\n",
+       "13      I       7\n",
+       "14      I       4\n",
+       "15      K       6\n",
+       "16      K       8\n",
+       "17      L       9\n",
+       "18      M       5\n",
+       "19      M       8\n",
+       "20      M      13\n",
+       "21      M       8\n",
+       "22      M       9\n",
+       "23      M      11\n",
+       "24      M       8\n",
+       "25      M       7\n",
+       "0       N       8\n",
+       "1       N       6\n",
+       "2       N      13\n",
+       "3       N      10\n",
+       "4       N      10\n",
+       "5       N       8\n",
+       "6       N      14\n",
+       "7       N      12\n",
+       "8       O       4\n",
+       "9       O       8\n",
+       "10      O       6\n",
+       "11      P      12\n",
+       "12      R      12\n",
+       "13      S      14\n",
+       "14      S      12\n",
+       "15      T       9\n",
+       "16      T       5\n",
+       "17      U       4\n",
+       "18      V       7\n",
+       "19      V       8\n",
+       "20      W      10\n",
+       "21      W      13\n",
+       "22      W       9\n",
+       "23      W       7"
       ]
      },
-     "execution_count": 93,
+     "execution_count": 261,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
     "sdf = pd.concat([st_letters, st_len], axis=1, keys=['letter', 'length'])\n",
-    "sdf.head(5)"
+    "sdf"
    ]
   },
   {
@@ -4949,7 +5250,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 96,
+   "execution_count": 265,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -4993,28 +5294,97 @@
        "      <th>G</th>\n",
        "      <td>7.000000</td>\n",
        "    </tr>\n",
+       "    <tr>\n",
+       "      <th>H</th>\n",
+       "      <td>6.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>I</th>\n",
+       "      <td>6.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>K</th>\n",
+       "      <td>7.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>L</th>\n",
+       "      <td>9.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>M</th>\n",
+       "      <td>8.625000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>N</th>\n",
+       "      <td>10.125000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>O</th>\n",
+       "      <td>6.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>P</th>\n",
+       "      <td>12.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>R</th>\n",
+       "      <td>12.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>S</th>\n",
+       "      <td>13.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>T</th>\n",
+       "      <td>7.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>U</th>\n",
+       "      <td>4.000000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>V</th>\n",
+       "      <td>7.500000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>W</th>\n",
+       "      <td>9.750000</td>\n",
+       "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
        "</div>"
       ],
       "text/plain": [
-       "          length\n",
-       "letter          \n",
-       "A       7.000000\n",
-       "C       9.666667\n",
-       "D       8.000000\n",
-       "F       7.000000\n",
-       "G       7.000000"
+       "           length\n",
+       "letter           \n",
+       "A        7.000000\n",
+       "C        9.666667\n",
+       "D        8.000000\n",
+       "F        7.000000\n",
+       "G        7.000000\n",
+       "H        6.000000\n",
+       "I        6.000000\n",
+       "K        7.000000\n",
+       "L        9.000000\n",
+       "M        8.625000\n",
+       "N       10.125000\n",
+       "O        6.000000\n",
+       "P       12.000000\n",
+       "R       12.000000\n",
+       "S       13.000000\n",
+       "T        7.000000\n",
+       "U        4.000000\n",
+       "V        7.500000\n",
+       "W        9.750000"
       ]
      },
-     "execution_count": 96,
+     "execution_count": 265,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "#letter is index, length [] is what we are aggregating followed by how we are aggregating\n",
-    "sdf.groupby('letter')['length'].mean().to_frame().head(5)"
+    "sdf.groupby('letter')['length'].mean().to_frame()"
    ]
   },
   {
@@ -5030,7 +5400,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 98,
+   "execution_count": 276,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -5065,7 +5435,7 @@
        "Name: length, dtype: int64"
       ]
      },
-     "execution_count": 98,
+     "execution_count": 276,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -5087,7 +5457,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 99,
+   "execution_count": 271,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -5135,7 +5505,7 @@
        "D            1"
       ]
      },
-     "execution_count": 99,
+     "execution_count": 271,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -5146,7 +5516,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 100,
+   "execution_count": 277,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -5194,7 +5564,7 @@
        "D               [8]"
       ]
      },
-     "execution_count": 100,
+     "execution_count": 277,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -5217,7 +5587,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 101,
+   "execution_count": 298,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -5280,7 +5650,7 @@
        "D         8    8  8.000000    1"
       ]
      },
-     "execution_count": 101,
+     "execution_count": 298,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -5303,7 +5673,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 103,
+   "execution_count": 300,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -5361,13 +5731,12 @@
        "D         8    8         1"
       ]
      },
-     "execution_count": 103,
+     "execution_count": 300,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "#can pass dictionary rather than just list\n",
     "sdf.groupby('letter')['length'].agg([max, min, lambda x: x.nunique()]).head(3)"
    ]
   },
@@ -5384,7 +5753,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 105,
+   "execution_count": 314,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -5443,7 +5812,7 @@
        "2           AZ  Arizona            A           A            7"
       ]
      },
-     "execution_count": 105,
+     "execution_count": 314,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -5462,7 +5831,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 106,
+   "execution_count": 320,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -5524,7 +5893,7 @@
        "             T                  1"
       ]
      },
-     "execution_count": 106,
+     "execution_count": 320,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -5553,7 +5922,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 109,
+   "execution_count": 349,
    "metadata": {
     "collapsed": true,
     "slideshow": {
@@ -5567,7 +5936,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 110,
+   "execution_count": 350,
    "metadata": {
     "collapsed": false,
     "slideshow": {
@@ -5638,94 +6007,13 @@
        "4   Khawr FakkÃÂn  United Arab Emirates     Ash ShÃÂriqah     291696"
       ]
      },
-     "execution_count": 110,
+     "execution_count": 350,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
     "cities.head()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 119,
-   "metadata": {
-    "collapsed": false,
-    "scrolled": true,
-    "slideshow": {
-     "slide_type": "slide"
-    }
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>name</th>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>country</th>\n",
-       "      <th></th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>Afghanistan</th>\n",
-       "      <td>48</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>Aland Islands</th>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>Albania</th>\n",
-       "      <td>20</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "               name\n",
-       "country            \n",
-       "Afghanistan      48\n",
-       "Aland Islands     1\n",
-       "Albania          20"
-      ]
-     },
-     "execution_count": 119,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "cities.groupby('country')['name'].count().to_frame().head(3)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 122,
-   "metadata": {
-    "collapsed": false
-   },
-   "outputs": [
-    {
-     "ename": "SyntaxError",
-     "evalue": "EOL while scanning string literal (<ipython-input-122-c6f6eb07d00b>, line 2)",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-122-c6f6eb07d00b>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    cities.groupby(['country', 'subcountry]).nunique().to_frame()\u001b[0m\n\u001b[0m                                                                ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m EOL while scanning string literal\n"
-     ]
-    }
-   ],
-   "source": [
-    "\n",
-    "cities.groupby(['country', 'subcountry]).nunique().to_frame()"
    ]
   },
   {
@@ -5743,7 +6031,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 129,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -5751,89 +6039,12 @@
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>name</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>'</th>\n",
-       "      <td>3</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>A</th>\n",
-       "      <td>1398</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>B</th>\n",
-       "      <td>1985</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>C</th>\n",
-       "      <td>1557</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>D</th>\n",
-       "      <td>755</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>E</th>\n",
-       "      <td>469</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>F</th>\n",
-       "      <td>475</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>G</th>\n",
-       "      <td>830</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>H</th>\n",
-       "      <td>767</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>I</th>\n",
-       "      <td>443</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "   name\n",
-       "'     3\n",
-       "A  1398\n",
-       "B  1985\n",
-       "C  1557\n",
-       "D   755\n",
-       "E   469\n",
-       "F   475\n",
-       "G   830\n",
-       "H   767\n",
-       "I   443"
-      ]
-     },
-     "execution_count": 129,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "cities.groupby([x[0].upper() for x in cities['name']])['name'].count().to_frame().head(10)"
-   ]
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
-   "execution_count": 133,
+   "execution_count": null,
    "metadata": {
     "collapsed": false,
     "scrolled": true,
@@ -5841,64 +6052,21 @@
      "slide_type": "slide"
     }
    },
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th></th>\n",
-       "      <th>name</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th rowspan=\"2\" valign=\"top\">'</th>\n",
-       "      <th>E</th>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>H</th>\n",
-       "      <td>2</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th rowspan=\"3\" valign=\"top\">A</th>\n",
-       "      <th>)</th>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>A</th>\n",
-       "      <td>290</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>B</th>\n",
-       "      <td>7</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "     name\n",
-       "' E     1\n",
-       "  H     2\n",
-       "A )     1\n",
-       "  A   290\n",
-       "  B     7"
-      ]
-     },
-     "execution_count": 133,
-     "metadata": {},
-     "output_type": "execute_result"
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": false,
+    "scrolled": true,
+    "slideshow": {
+     "slide_type": "slide"
     }
-   ],
-   "source": [
-    "cities.groupby([[x[0].upper()for x in cities['name']],\\\n",
-    "                [x[-1].upper() for x in cities['name']]])['name'].count().to_frame().head(5)"
-   ]
+   },
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
@@ -5932,12 +6100,11 @@
   }
  ],
  "metadata": {
-  "anaconda-cloud": {},
   "celltoolbar": "Slideshow",
   "kernelspec": {
-   "display_name": "Python [Root]",
+   "display_name": "Python 2",
    "language": "python",
-   "name": "Python [Root]"
+   "name": "python2"
   },
   "language_info": {
    "codemirror_mode": {
