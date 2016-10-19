@@ -1,0 +1,81 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "df = pd.get_dummies(df,columns = ['Location','Job_Title','Company'])\n",
+    "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.33, random_state = 77) ## create train-test out of the data given\n",
+    "\"\"\" Fit a binary classification predictor.\"\"\"\n",
+    "logreg = LogisticRegression(solver='liblinear')\n",
+    "C_vals = [0.0001, 0.001, 0.01, 0.1, .15, .25, .275, .33, 0.5, .66, 0.75, 1.0, 2.5, 5.0, 10.0, 100.0, 1000.0]\n",
+    "penalties = ['l1','l2']\n",
+    "\n",
+    "gs = GridSearchCV(logreg, {'penalty': penalties, 'C': C_vals}, verbose=False, cv=3)\n",
+    "gs.fit(X_train, y_train)\n",
+    "\n",
+    "lr = LogisticRegressionCV(Cs=10, cv=5)\n",
+    "cv_model = logreg.fit(X_train, y_train)\n",
+    "cv_pred = cv_model.predict(X_test)\n",
+    "\n",
+    "y_pred = lr.predict(X_test)\n",
+    "y_score = lr.decision_function(X_test) # Submit these response, the output of mode"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "conmat = np.array(confusion_matrix(Y_test, y_pred, labels=[1,0]))\n",
+    "confusion = pd.DataFrame(conmat, index=['over_50k', 'under_50k'],\n",
+    "                            columns=['predicted_over50k','predicted_under50k'])\n",
+    "\n",
+    "print(confusion)\n",
+    "print classification_report(Y_test,y_pred)\n",
+    "roc_auc_score(Y_test, y_score)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "coef = pd.DataFrame([X.columns.values.tolist(), lr.coef_[0].tolist()], index=['features', 'coef']).T\n",
+    "coef.sort_values(by='coef', ascending=False)"
+   ]
+  }
+ ],
+ "metadata": {
+  "anaconda-cloud": {},
+  "kernelspec": {
+   "display_name": "Python [Root]",
+   "language": "python",
+   "name": "Python [Root]"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
