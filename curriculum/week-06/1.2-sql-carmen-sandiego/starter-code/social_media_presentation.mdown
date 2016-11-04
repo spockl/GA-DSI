@@ -1,0 +1,36 @@
+Goal. Objectives. KPI's - key performance indicators
+
+Google analytics
+
+ROI, Conversions. Am I getting my money out of this?
+
+
+Twitter: Impressions(how many people saw your tweet)
+		Engagments(Total number of times a user interacted with a tweet)
+		Engagment rate(Number of engament/impressions)
+		Embedded media clicks(Clicks to view a photo or video)
+
+
+LinkedIn : Today's Social Actions
+
+
+Google analytics: bounce rate- people going to page and immediately leaving
+				  Visitor session- time a visitor spends
+				  benchmarking- compare sites analytics against others
+
+Can't use google analytics for project
+Page insights on Facebook
+
+Pages you watch on Facebook...Maybe? Under page insights
+Audience insights??
+
+LinkedIn- 
+
+YouTube- 
+
+Google Analytics
+
+Testmysite.thinkwithgoogle.com
+
+
+topsy??
